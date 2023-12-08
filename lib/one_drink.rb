@@ -4,7 +4,7 @@ class OneDrink
     @price = price.to_i
   end
 
-  def full_price
+  def price
     @price * @number
   end
 end

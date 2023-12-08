@@ -9,7 +9,7 @@ class SumPrice
     end
 
     if row[1] == "header" && row[2] == "time_base"
-      time_table = TimeTable.new(row[0], row[4])
+      time_table = StayingTime.new(row[0], row[4])
     elsif row[2] == "free_time"
       free_time = FreeTime.new(row[4])
       puts free_time.price

@@ -1,4 +1,4 @@
-class TimeTable
+class StayingTime
     def initialize(enter_time, number)
         @enter_time = enter_time
         @number = number

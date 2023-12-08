@@ -1,4 +1,3 @@
-18:00:00,header,time_base,one_drink
-18:01:00,enter,2
+18:00:00,header,time_base,one_drink,2
 19:30:00,drink,2,300
 21:45:00,footer

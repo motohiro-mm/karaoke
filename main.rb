@@ -10,6 +10,7 @@ Dir.glob(File.join(File.expand_path('./data', __dir__), '*.csv')).each do |file|
   puts file
 
   CSV.foreach(file) do |row|
+    Foo.new(row)
     puts row.inspect
   end
 end

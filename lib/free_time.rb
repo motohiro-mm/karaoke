@@ -1,6 +1,6 @@
 class FreeTime
     def initialize(number)
-        @number = number
+        @number = number.to_i
     end
 
     def price 

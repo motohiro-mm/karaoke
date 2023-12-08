@@ -1,7 +1,5 @@
 10:00:00,header,time_base,one_drink
 10:01:00,enter,5
 10:05:00,drink,5,300
-12:00:00,leave,2
-12:30:00,enter,1
-12:05:00,drink,1,200
+12:00:00,leave,5
 15:00:00,footer

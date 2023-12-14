@@ -4,6 +4,6 @@ class FreeDrink
   end
 
   def price
-    500 * @people
+    1000 * @people
   end
 end

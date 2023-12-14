@@ -1,14 +1,12 @@
-require 'time'
-
 class StayingTime
   def initialize(enter_time, number)
     @enter_time = enter_time
-    @number = number.to_i
+    @number = number
   end
 
   def price(exit_time)
-    total_time = (Time.parse(exit_time) - Time.parse(@enter_time)) / 3600
-    (total_time * @number * 150).round
+    total_time = exit_time - @enter_time
+    total_time * @number
   end
 end
 

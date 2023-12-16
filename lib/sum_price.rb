@@ -5,6 +5,8 @@ class SumPrice
         FreeDrink.new(data[0][4])
       elsif data[0].include?("one_drink")
         OneDrink.new(data[1][2], data[1][3])
+      else
+        raise "ドリンクデータが不正です。データを確認してください。"
       end
 
     @time =
@@ -12,6 +14,8 @@ class SumPrice
         StayingTime.new(data[0][0], data[2][0], data[0][4])
       elsif data[0].include?("free_time")
         FreeTime.new(data[0][4])
+      else
+        raise "利用コースが不正です。データを確認してください。"
       end
   end
 

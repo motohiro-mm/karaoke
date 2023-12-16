@@ -10,9 +10,8 @@ class SumPrice
       end
 
     if data[0].include?("time_base")
-      time_table = StayingTime.new(data[0][0], data[0][4])
-      exit_time = data[2][0]
-      @time_price = time_table.price(exit_time)
+      time_table = StayingTime.new(data[0][0], data[2][0], data[0][4])
+      @time_price = time_table.price
     elsif data[0].include?("free_time")
       free_time = FreeTime.new(data[0][4])
       @time_price = free_time.price

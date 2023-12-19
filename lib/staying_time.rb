@@ -7,8 +7,9 @@ class StayingTime
     @number = number.to_i
   end
 
+  BASIC_PRICE_PER_HOUR = 150
   def price
-    total_time * @number * 150
+    total_time * @number * BASIC_PRICE_PER_HOUR
   end
 
   def total_time

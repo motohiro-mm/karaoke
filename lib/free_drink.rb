@@ -3,7 +3,8 @@ class FreeDrink
     @people = people.to_i
   end
 
+  FREE_DRINK_PRICE = 500
   def price
-    1000 * @people
+    FREE_DRINK_PRICE * @people
   end
 end
